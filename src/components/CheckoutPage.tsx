@@ -30,7 +30,7 @@ const CheckoutPage = ({amount,clientSecret}:{amount:number,clientSecret:string})
       elements,
       clientSecret,
       confirmParams: {
-        return_url: `http://localhost:3000/payment-success?amount=${amount}`,
+        return_url: `https://nexora-frontend-three.vercel.app/payment-success?amount=${amount}`,
       },
     });
 
