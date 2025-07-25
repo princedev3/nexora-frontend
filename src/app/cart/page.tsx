@@ -19,8 +19,8 @@ const CartPage = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [openCheckout, setOpenCheckout] = useState(false);
   const [address, setAddress] = useState("");
-  const [name, setName] = useState(user.name);
-  const [email, setEmail] = useState(user.email);
+  const [name, setName] = useState(user?.name || "");
+const [email, setEmail] = useState(user?.email || "");
   const [note, setNote] = useState("");
   const [clientSecret, setClientSecret] = useState("");
     
